@@ -1,0 +1,80 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    width: 160vh;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.title{
+    margin-left: 2%;
+}
+
+.movies{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+    gap:16px;
+    padding: 4%;
+}
+
+.card {
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: 0.4em;
+    border-radius: 6px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.heading{
+    margin-top: 5%;
+    margin-right: 16%;
+
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+    margin-right: 16%;
+}
+
+
+.card-image {
+    width: 160px; /* establece el ancho exacto */
+    height: 72%; /* establece el alto exacto */
+    overflow: hidden; /* evita que la imagen se redimensione */
+}
+
+.card-image img {
+    width: 100%; /* ocupa todo el ancho disponible */
+    height: 100%; /* altura se ajusta automáticamente para mantener la proporción */
+    display: block; /* establece el elemento como bloque para alinear verticalmente */
+}
+
+
+
+/*
+img{
+    width: 70%;
+    height: 170px;
+    margin-bottom: 5%;
+}
+*/
